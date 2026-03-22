@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+    <title>Samévangile - Musique</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <img src="MES SON/image/logo.PNG" alt="Samévangile logo" class="logo">
+    <h1>Espace Musique</h1>
+</header>
+<nav>
+    <p style="text-align:content; font-style:italic; color:gold;">
+            Ciquez le lien pour passer à d'autres pages...ect
+            </p>
+    <a href="index.html">Accueil></a>
+    <a href="musique.html">Musique</a>
+    <a href="apropos.html">apropos</a>
+    <a href="contact.html">Contact</a>
+    <a href="video.html">Video</a>
+    <a href="images.html">images</a>
+
+</nav>
+<footer>
+    <p>© je ne fais rien si c'est pas Dieu qui ma'envoi,🎵
+    </p>
+    <p>Car ma mission vient Du ciel.🎵🎵</p>
+</footer>
+  <p>
+        Rejoins-nous et découvrez des sons, des paroles et des message qui chagent la vie.🔥🔥 
+    </p>
+    <a href="musique.html" class="btn-accueil">Ecouter maintenant📻🧑‍💻</a>
+</section>
+</p>
+    <a href="video.html" class="btn-accueil">Régarder maintenant Des video📻🧑‍💻</a>
+</section>
+</p>
+    <a href="images.html" class="btn-accueil">Régarder maintenant Des images📻🧑‍💻</a>
+</section>
+</p>
+    <a href="apropos.html" class="btn-accueil">Régarder maintenant Apropos📻🧑‍💻</a>
+</section>
+</p>
+    <a href="contact.html" class="btn-accueil">Régarder maintenant Mes Contact📻🧑‍💻</a>
+</section>
+</p>
+    <a href="index.html" class="btn-accueil">Réarder maintenant Accueil📻🧑‍💻</a>
+</section>
+
+
+
+
+
+
+<section>
+
+    <div class="son">
+        <h1>artiste: Samevangile</h1>
+
+        <h2>titre: La présence De Dieu</h2>
+
+         <audio controls>
+            <source src="MES SON/image/audio.mp3" type="audio/mpeg">
+         </audio>
+    </div>
+    <a href="MES SON/image/audio.mp3" download>
+        <button>Téléchager ma musique</button>
+    </a>
+
+<audio id="son" src="MES SON/image/audio.mp3"></audio>
+
+<button onclik="toggle()"> ▶️ play / ⏸️ pause</button>
+
+<script>
+    function toggle(){
+        let audio = document.getELEmentById("son");
+
+        if(audio.pause){
+            audio.play();
+            }else{
+                audio.pause();
+            }
+            }
+</script>
+</section>
+<section class="commentaires">
+    <h2>💬 Laissez votre avis👇</h2>
+
+    <form name="commentaires" method="POST" data-netlify="true">
+
+        <input type="text" name="nom" placeholder="Votre nom" required>
+
+        <textarea name="message" placeholder="Votre commentaire..." required></textarea>
+
+        <label>🌟 Note :</label>
+        <select name="note">
+            <option value="excellent">Excellent 🔥</option>
+            <option value="Bon">Bon 👍</option>
+            <option value="moyen">moyen 🙁</option>
+            <option value="mauvais">mauvais 👎</option>
+
+        </select>
+<button type="submit">Envoyer</button>
+
+
+
+<footer>
+    <p>© 2026 Samévangile - Tous droits réservés</p>
+</footer>
+
+
+</body>
+</html>
